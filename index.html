@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Ramon Christopher Dajero</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header Section */
+    .header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      color: white;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .header p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+
+    .header .btn {
+      display: inline-block;
+      padding: 10px 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      background-color: #121212;
+      color: #feb47b;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .header .btn:hover {
+      background-color: #feb47b;
+      color: #121212;
+    }
+
+    /* Navigation */
+    .nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #121212;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+    }
+
+    .nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .nav a {
+      color: #fff;
+      font-size: 1rem;
+      padding: 5px 15px;
+      transition: color 0.3s;
+    }
+
+    .nav a:hover {
+      color: #feb47b;
+    }
+
+    /* About Section */
+    .about {
+      background-color: #1e1e1e;
+      padding: 50px 20px;
+      text-align: center;
+      border-top: 5px solid #feb47b;
+    }
+
+    .about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    /* Skills Section */
+    .skills {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .skills h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .skills ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .skills li {
+      padding: 15px 30px;
+      background: #1e1e1e;
+      border: 2px solid #feb47b;
+      border-radius: 30px;
+      font-size: 1.2rem;
+    }
+
+    /* Contact Section */
+    .contact {
+      background-color: #1e1e1e;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact input, 
+    .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      padding: 10px 25px;
+      background-color: #feb47b;
+      color: #121212;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .contact button:hover {
+      background-color: #ff7e5f;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #121212;
+      padding: 20px;
+      text-align: center;
+      border-top: 5px solid #feb47b;
+    }
+
+    .footer p {
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 2.5rem;
+      }
+
+      .header p {
+        font-size: 1.2rem;
+      }
+
+      .skills ul {
+        flex-direction: column;
+      }
+
+      .contact form {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="header">
+    <div class="container">
+      <h1>Hi, I'm Ramon Christopher Dajero</h1>
+      <p>Developer | Creative Thinker</p>
+      <a href="#about" class="btn">Learn More About Me</a>
+    </div>
+  </header>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a 1st year of senior high schoo with a deep interest in technology, design, and innovation. 
+        I enjoy creating intuitive, user-friendly websites and applications. 
+        In my free time, I love drawing, playing the guitar, and exploring new hobbies.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills & Expertise</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Drawing</li>
+        <li>Guitaring</li>
+        <li>Problem Solving</li>
+        <li>Dancing</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 Ramon Christopher Dajero | Designed with ❤️</p>
+    </div>
+  </footer>
+</body>
+</html>
